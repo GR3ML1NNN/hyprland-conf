@@ -195,7 +195,8 @@ hl.config({
 hl.config({
 	master = {
 		new_status = "master",
-		-- hl.bind("SUPER + SHIFT", left, layoutmsg, swapwithmaster),
+		hl.bind("SUPER + SHIFT + LEFT", hl.dsp.layout("swapwithmaster master")),
+		hl.bind("ALT + TAB", hl.dsp.layout("cyclenext")),
 	},
 })
 
